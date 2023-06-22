@@ -1,0 +1,31 @@
+spring:
+  profiles:
+    default: "dev"
+  application:
+    name: FrontApp
+logging:
+  level:
+    root: info
+  pattern:
+    console: = %d{yyyy-MM-dd HH:mm:ss} - %msg%n
+    file: =%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n
+  file:
+    name: /home/tomi/log/${spring.application.name}.log
+server:
+  port: 8080
+back.url: http://localhost:8081
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dockerized
+logging:
+  pattern:
+    console: = %d{yyyy-MM-dd HH:mm:ss} - %msg%n
+    file: =%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n
+  file:
+    name: /opt/app/log/${spring.application.name}.log
+server:
+  port: 8080
+back.url: http://backapp:8081
