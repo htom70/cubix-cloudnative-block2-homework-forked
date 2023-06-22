@@ -1,0 +1,1 @@
+docker build -t homework_frontapp:block2 --build-arg target_folder="frontapp/target" .

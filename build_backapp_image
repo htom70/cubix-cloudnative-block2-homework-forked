@@ -1,0 +1,1 @@
+docker build -t homework_backapp:block2 --build-arg target_folder="backapp/target" .
