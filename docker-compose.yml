@@ -1,0 +1,39 @@
+#version: "3.9"
+
+services:
+  frontapp:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        - target_folder=frontapp/target
+#    image: homework-frontapp:block2
+    pull_policy: if_not_present
+    environment:
+      - SPRING_PROFILES_ACTIVE=dockerized
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - backend
+
+  backapp:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        - target_folder=backapp/target
+#    image: homework_backapp:block2
+    pull_policy: if_not_present
+    environment:
+      - SPRING_PROFILES_ACTIVE=dockerized
+    restart: always
+    ports:
+      - 8081:8081
+    networks:
+      - backend
+
+networks:
+  backend:
+
+
