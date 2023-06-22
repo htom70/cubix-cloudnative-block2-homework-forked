@@ -1,0 +1,40 @@
+I have no name!@f4334af3fcc6:/opt/app$ ls
+app.jar  log
+I have no name!@f4334af3fcc6:/opt/app$ cd log/
+I have no name!@f4334af3fcc6:/opt/app/log$ cat FrontApp.log
+=2023-06-22 16:09:25 [main] INFO  h.cubix.cloud.SecondHomeworkFrontapp - Starting SecondHomeworkFrontapp v0.0.1-SNAPSHOT using Java 17.0.7 with PID 1 (/opt/app/app.jar started by ? in /opt/app)
+=2023-06-22 16:09:25 [main] INFO  h.cubix.cloud.SecondHomeworkFrontapp - The following 1 profile is active: "dockerized"
+=2023-06-22 16:09:26 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=b229cd53-d0e0-3266-9b99-87c77d026db5
+=2023-06-22 16:09:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+=2023-06-22 16:09:27 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+=2023-06-22 16:09:27 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+=2023-06-22 16:09:27 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+=2023-06-22 16:09:27 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1427 ms
+=2023-06-22 16:09:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+=2023-06-22 16:09:28 [main] INFO  h.cubix.cloud.SecondHomeworkFrontapp - Started SecondHomeworkFrontapp in 2.827 seconds (process running for 3.32)
+I have no name!@f4334af3fcc6:/opt/app/log$ clear
+I have no name!@f4334af3fcc6:/opt/app/log$ cat FrontApp.log
+=2023-06-22 16:09:25 [main] INFO  h.cubix.cloud.SecondHomeworkFrontapp - Starting SecondHomeworkFrontapp v0.0.1-SNAPSHOT using Java 17.0.7 with PID 1 (/opt/app/app.jar started by ? in /opt/app)
+=2023-06-22 16:09:25 [main] INFO  h.cubix.cloud.SecondHomeworkFrontapp - The following 1 profile is active: "dockerized"
+=2023-06-22 16:09:26 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=b229cd53-d0e0-3266-9b99-87c77d026db5
+=2023-06-22 16:09:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+=2023-06-22 16:09:27 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+=2023-06-22 16:09:27 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+=2023-06-22 16:09:27 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+=2023-06-22 16:09:27 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1427 ms
+=2023-06-22 16:09:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+=2023-06-22 16:09:28 [main] INFO  h.cubix.cloud.SecondHomeworkFrontapp - Started SecondHomeworkFrontapp in 2.827 seconds (process running for 3.32)
+=2023-06-22 16:16:12 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+=2023-06-22 16:16:12 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+=2023-06-22 16:16:12 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+=2023-06-22 16:16:12 [http-nio-8080-exec-2] INFO  h.c.c.a.c.FrontappController - Local endpoint was called - no call will be made to backapp - message was: null
+=2023-06-22 16:16:15 [http-nio-8080-exec-3] INFO  h.c.c.a.c.FrontappController - Local endpoint was called - no call will be made to backapp - message was: Hello
+=2023-06-22 16:16:26 [http-nio-8080-exec-4] INFO  h.c.c.a.c.FrontappController - Preparing for calling backapp - message was: Hello
+=2023-06-22 16:16:26 [http-nio-8080-exec-4] INFO  h.c.c.a.c.FrontappController - Calling backapp
+=2023-06-22 16:16:26 [http-nio-8080-exec-4] INFO  h.c.c.a.c.FrontappController - Backapp call was successful, response was: BackappResponse[time=2023-06-22T16:16:26.402754652, message=Hello, homeworkOwner=Héring Tamás, hostAddress=172.26.0.2, extraImageData=Cubix training]
+=2023-06-22 16:16:26 [http-nio-8080-exec-4] INFO  h.c.c.a.c.FrontappController - Response will be: FrontappResponse[msForReply=18, backappMessage=Hello, frontappHomeworkOwner=Héring Tamás, frontappHostAddress=172.26.0.3, backappHomeworkOwner=Héring Tamás, backappHostAddress=172.26.0.2, doExtraImageDataMatch=true]
+=2023-06-22 16:16:29 [http-nio-8080-exec-5] INFO  h.c.c.a.c.FrontappController - Preparing for calling backapp - message was: null
+=2023-06-22 16:16:29 [http-nio-8080-exec-5] INFO  h.c.c.a.c.FrontappController - Calling backapp
+=2023-06-22 16:16:29 [http-nio-8080-exec-5] INFO  h.c.c.a.c.FrontappController - Backapp call was successful, response was: BackappResponse[time=2023-06-22T16:16:29.186579299, message=hardcoded-default-backapp-message, homeworkOwner=Héring Tamás, hostAddress=172.26.0.2, extraImageData=Cubix training]
+=2023-06-22 16:16:29 [http-nio-8080-exec-5] INFO  h.c.c.a.c.FrontappController - Response will be: FrontappResponse[msForReply=3, backappMessage=hardcoded-default-backapp-message, frontappHomeworkOwner=Héring Tamás, frontappHostAddress=172.26.0.3, backappHomeworkOwner=Héring Tamás, backappHostAddress=172.26.0.2, doExtraImageDataMatch=true]
+I have no name!@f4334af3fcc6:/opt/app/log$
