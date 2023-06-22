@@ -1,0 +1,1 @@
+docker inspect -f {{.Config.Labels}} homework_frontapp:block2
